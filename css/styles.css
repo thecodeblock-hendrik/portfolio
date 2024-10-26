@@ -187,14 +187,13 @@ header {
 
 .project-container {
   display: grid;
-  gap: 70px 70px;
+  gap: 70px 10px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   width: 90%;
   height: 100%;
-  margin: 2rem auto;
-  justify-items: center;
-  align-items: center;
+  margin: 2rem auto; 
+  padding: 0 5rem;
 }
 
 .project-tile {
@@ -204,8 +203,8 @@ header {
   background-color: #01648b;
   border-radius: 10px;
   border: 1px solid var(--primary-font-color);
-  width: 40rem;
-  height: 20rem;
+  width: 30rem;
+  height: 30rem;
   box-shadow: 5px 0 10px var(--primary-font-color);
 }
 
@@ -220,9 +219,18 @@ header {
 }
 
 .tile-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 80%;
   background-color: var(--blocks-blue-color);
+  border-radius: 10px 10px 0 0;
+}
+
+.tile-banner img {
+  width: 100%;
+  height: 100%;
   border-radius: 10px 10px 0 0;
 }
 
