@@ -1,5 +1,5 @@
 :root {
-  --primary-font-color:#000;
+  --primary-font-color: #000;
   --blocks-green-color: #5bd0a4;
   --blocks-blue-color: #01648b;
 }
@@ -52,14 +52,15 @@ header {
 
 .spacer {
   height: 60px;
+  width: 100%;
 }
 
 #welcome-section {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 110px 160px 135px 145px 155px 200px;
+  grid-template-rows: 0.2fr 0.2fr 0.5fr 0.25fr 0.2fr;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
   background-color: #2e8b57;
   gap: 5px;
 }
@@ -70,15 +71,18 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 10px;
-  background: linear-gradient(to top, var(--blocks-blue-color), var(--blocks-green-color));
+
+  background: linear-gradient(
+    to top,
+    var(--blocks-blue-color),
+    var(--blocks-green-color)
+  );
 }
 
 .block-1 i {
   color: var(--primary-font-color);
   font-size: 3rem;
   margin-top: 10px;
-  
 }
 
 .block-2 {
@@ -88,7 +92,7 @@ header {
 }
 
 .block-3 {
-  background-color: var(--blocks-blue-color);
+  background-color: var(--blocks-green-color);
   grid-column: 1 / 6;
   grid-row: 2 / 3;
 }
@@ -100,17 +104,21 @@ header {
 }
 
 .block-5 {
-  background: linear-gradient(to bottom, var(--blocks-blue-color), var(--blocks-green-color));
+  background: linear-gradient(
+    to bottom,
+    var(--blocks-blue-color),
+    var(--blocks-green-color)
+  );
   grid-column: 1 / 9;
-  grid-row: 3 / 5;
+  grid-row: 3 / 4;
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .block-5 .block-5-text-container {
   text-align: center;
-  width: 30%
+  width: 30%;
 }
 
 .block-5 .block-5-text-container h1 {
@@ -127,26 +135,30 @@ header {
 
 .block-6 {
   background-color: var(--blocks-blue-color);
-  grid-column: 1 / 4;
-  grid-row: 5 / 6;
+  grid-column: 1 / 6;
+  grid-row: 4 / 5;
 }
 
 .block-7 {
-  background-color: var(--blocks-blue-color);
-  grid-column: 4 / 9;
-  grid-row: 5/ 6;
+  background-color: var(--blocks-green-color);
+  grid-column: 6 / 9;
+  grid-row: 4 / 5;
 }
 
 .block-8 {
   background-color: var(--blocks-green-color);
-  grid-column: 1 / 6;
-  grid-row: 6 / 7;
+  grid-column: 1 / 4;
+  grid-row: 5 / 6;
 }
 
 .block-9 {
-  background: linear-gradient(to top, var(--blocks-blue-color), var(--blocks-green-color));
-  grid-column: 6 / 9;
-  grid-row: 6 / 7;
+  background: linear-gradient(
+    to top,
+    var(--blocks-blue-color),
+    var(--blocks-green-color)
+  );
+  grid-column: 4 / 9;
+  grid-row: 5 / 6;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -154,8 +166,77 @@ header {
   font-size: 3rem;
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1600px) {
-  #welcome-section {
-    grid-template-rows: 95px 110px 115px 165px 85px 95px;   
-  }
-} 
+/* Projects Section */
+
+#projects {
+  height: 100%;
+  background-color: #2e8b57;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#projects h2 {
+  text-align: center;
+  color: var(--primary-font-color);
+  font-size: 3rem;
+  margin-top: 5rem;
+  text-shadow: 2px 2px var(--blocks-green-color);
+}
+
+.project-container {
+  display: grid;
+  gap: 70px 70px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 90%;
+  height: 100%;
+  margin: 2rem auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5px auto;
+  background-color: #01648b;
+  border-radius: 10px;
+  border: 1px solid var(--primary-font-color);
+  width: 40rem;
+  height: 20rem;
+  box-shadow: 5px 0 10px var(--primary-font-color);
+}
+
+.project-1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.project-2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.tile-banner {
+  width: 100%;
+  height: 80%;
+  background-color: var(--blocks-blue-color);
+  border-radius: 10px 10px 0 0;
+}
+
+.tile-description {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  background-color: var(--blocks-green-color);
+  border-radius: 0 0 10px 10px;
+}
+
+.tile-description h3 {
+  color: var(--primary-font-color);
+  font-size: 1.5rem;
+}
