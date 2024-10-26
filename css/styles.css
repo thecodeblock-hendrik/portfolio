@@ -51,6 +51,11 @@ header {
   text-decoration: none;
 }
 
+#navbar a:hover {
+  color: var(--primary-green);
+  border-bottom: 2px solid var(--primary-green);
+}
+
 .spacer {
   height: 60px;
   width: 100%;
@@ -199,6 +204,10 @@ header {
   padding: 0 5rem;
 }
 
+.project-container a {
+  text-decoration: none;
+}
+
 .project-tile {
   display: flex;
   flex-direction: column;
@@ -284,7 +293,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 55%;
   margin: 0 auto;
   padding: 0 5rem;
 }
@@ -296,6 +305,15 @@ header {
   text-shadow: 2px 2px var(--primary-green);
 }
 
+.contact-container a {
+  text-decoration: none;
+}
+
+.contact-container i:hover {
+  color: var(--primary-green);
+  text-shadow: 0 0 var(--primary-green);
+}
+
 #contact .contact-details {
   display: flex;
   justify-content: center;
@@ -304,5 +322,7 @@ header {
 .contact-text {
   font-size: 1.5rem;
   margin-left: 10px;
+  letter-spacing: 0.5rem;
   
 }
+
