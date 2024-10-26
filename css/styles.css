@@ -119,13 +119,14 @@ header {
 
 .block-5 .block-5-text-container {
   text-align: center;
-  width: 30%;
+  width: 35%;
 }
 
 .block-5 .block-5-text-container h1 {
   color: var(--primary-font-color);
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 0;
+  text-shadow: 2px 2px var(--primary-green);
 }
 
 .block-5 .block-5-text-container p {
@@ -208,6 +209,7 @@ header {
   width: 30rem;
   height: 30rem;
   box-shadow: 5px 0 10px var(--primary-font-color);
+  cursor: pointer;
 }
 
 .project-1 {
@@ -246,12 +248,61 @@ header {
   border-radius: 0 0 10px 10px;
 }
 
-.tile-description:hover {
+.project-tile:hover .tile-description {
   background-color: var(--primary-blue);
-  cursor: pointer;
 }
 
 .tile-description h3 {
   color: var(--primary-font-color);
   font-size: 1.5rem;
+}
+
+
+/* Contact Section */
+
+#contact {
+  height: 100%;
+  background-color: var(--primary-blue);
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  
+}
+
+#contact h2 {
+  text-align: center;
+  color: var(--primary-font-color);
+  font-size: 2.8rem;
+  margin-top: 5rem;
+  text-shadow: 2px 2px var(--primary-green);
+}
+
+#contact .contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.contact-container i {
+  color: var(--primary-font-color);
+  font-size: 3rem;
+  cursor: pointer;
+  text-shadow: 2px 2px var(--primary-green);
+}
+
+#contact .contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-text {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  
 }
